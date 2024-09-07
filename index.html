@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/nav.css"></link>
+    <title>console.blog() | Página Inicial</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a id="logo" href="../index.html">console.blog()</a>
+        <!-- Link para a home -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Publicações</a></li>
+          <li><a href="#">Sobre</a></li>
+          <a id="publicar" href="./pages/publicar.html">Nova Publicação</a>
+          <!-- <a id="publicar" href="\pages\publicar.html">Nova Publicação</a> -->
+        </ul>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <script>
+          document.querySelector(".burger").addEventListener("click", () => {
+            document.querySelector("nav ul").classList.toggle("active");
+          });
+          </script>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section class="container-destaque">
+          <div class="container-titulo-destaque">
+            <h3>Publicação em destaque</h3>
+          </div>
+          <div id="artigo-destaque"></div>
+        </section>
+        <section class="container-recentes">
+          <div id="recentes" class="container-titulo-recente">
+            <h3>Publicações recentes</h3>
+          </div>
+          <div id="artigo-recente"></div>
+        </section>
+      </div>
+    </main>
+    
+  </body>
+  <script src="./js/home.js"></script>
+
+  </html>
