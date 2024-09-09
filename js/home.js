@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const conteudo = document.createElement("p");
     const breakline2 = document.createElement("br");
-    conteudo.textContent = postagem.conteudo;
+    conteudo.textContent = postagem.conteudo; 
     postagemDiv.appendChild(conteudo);
     postagemDiv.appendChild(breakline2);
 
@@ -64,8 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
       artigoRecente.appendChild(postagemRecentDiv);
     }
   }
+  //cria mensagem caso não haja nenhuma postagem feita
   else {
     const mensagem = document.createElement("p");
+    mensagem.className = "labels"; 
     mensagem.textContent = "Não há postagens para exibir. Que tal começar uma?";
     artigoDestaque.appendChild(mensagem);
 
