@@ -23,32 +23,6 @@ header {
     /* Garante que a navbar esteja acima de outros elementos */
 }
 
-#logo {
-    font-family: 'Inconsolata', monospace;
-    font-size: 4vh;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-nav ul li {
-    display: inline;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
 #publicar {
     padding: 10px;
     background-color: #28a745;
