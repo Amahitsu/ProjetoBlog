@@ -33,5 +33,29 @@ nav ul {
 }
 
 #publicar:hover {
-    background-color: #218838;
+    background-color: #28b828;
+}
+
+nav.active ul li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav.active ul li a {
+    width: 100%;
+    display: block;
+}
+
+nav.active ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
